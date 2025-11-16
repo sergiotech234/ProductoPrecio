@@ -1,10 +1,9 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class MainProducto {
     public static void main(String[] args) {
         Producto Prod1 = new Producto(15);
 
         System.out.println("Precio inicial: " + Prod1.getPrecio());
+        //Creamos la excepcion try y catch para que haga haga el calculo del precio actual
         try {
             Prod1.actualizarPrecio(67);
         } catch (PrecioInvalidoException e) {
